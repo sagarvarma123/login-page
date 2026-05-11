@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 300px;
+    align-items: center;
+    margin-top: 200px;
+}
+     
+    /* start left side login coding */
+
+.left-login{
+    width: 330px;
+    height: 420px;
+    box-shadow: 5px 10px 5px 10px aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    
+
+
+}
+
+.left-login-head{
+    text-align: center;
+    font-family: sans-serif;
+    color: #323232;
+    margin-top: 60px;
+    
+
+}
+
+.left-login-tag-line{
+    text-align: center;
+    font-family: sans-serif;
+    color: #323232;
+    font-size: 16px;
+}
+
+.input-box{
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    font-family: sans-serif;
+
+}
+
+.forget-pas{
+    text-align: center;
+    font-family: sans-serif;
+    color: blue;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.login-btn{
+    width: 80%;
+    height: 32px;
+    text-align: center;
+    margin-left: 25px;
+    background: linear-gradient(120deg, #0072ff, #001f5c, #4facfe, #0072ff);
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.input-box:focus{
+    background-color: aliceblue;
+    border: 1px solid grey;
+}
+
+.login-btn:hover{
+    background:linear-gradient(130deg, Aqua,blue,purple)
+}
+
+ /* end left side login coding */
+
+  /* Start right side login coding */
+
+.right-login{
+    width: 350px;
+    height: 420px;
+    background-color: rgba(73, 9, 175, 0.792);
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+/* draw circle */
+
+.right-login::before{
+    content: "";
+    width: 390px;
+    height: 300px;
+    background-color: rgba(237, 233, 240, 0.1);
+    border-radius: 35%;
+    border: 2px solid rgba(237, 233, 240, 0.0);
+    position: absolute;
+    top: 280px;
+    right: 1px;
+    
+    
+}
+
+.right-login-head{
+    text-align: center;
+    margin-top: 120px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.right-login-tag-line{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.signup-btn{
+    width: 50%;
+    height: 35px;
+    margin-left: 85px;
+    margin-top: 40px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* background:linear-gradient(120deg,Aqua,blue,purple);*/
+
+    background-color: white;
+
+}
+
+.signup-btn:hover{
+    background: linear-gradient(110deg, #0072ff, #001f5c, #4facfe, #0072ff);
+    color: aliceblue;
+
+}
+
+
+
+
+   /* End right side login coding */
+
+   /* mobile responsive */
+
+   @media only screen and (max-width:768px)
+   {
+    .row{
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 20px;
+        height: auto;
+    }
+
+    .left-login{
+        width: 90%;
+    }
+
+    .login-btn{
+        width: 90%;
+        height: 35px;
+        margin-left: 13px;
+        margin-top: 10px;
+    }
+
+    .signup-btn{
+        width: 70%;
+        margin-left: 55px;
+    }
+
+   
+   }
